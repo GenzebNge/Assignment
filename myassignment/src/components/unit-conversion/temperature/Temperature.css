@@ -1,0 +1,37 @@
+.input{
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
+.Button {
+    background-color: Green;
+    border: none;
+    color: white;
+    padding: 15px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+  }
+  .Btnc {
+    background-color: rgb(21, 34, 21);
+    border: none;
+    color: white;
+    padding: 15px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+  }
+  .select{
+    position: relative;
+    font-family: Arial;
+   left: 10px;
+   right: 5px;
+   height: 30px;
+    border: 2px solid brown
+  }
+  
