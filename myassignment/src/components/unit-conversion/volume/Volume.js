@@ -1,28 +1,32 @@
 import React from "react";
-import './Volume.css'
+
 
 const Volume = (props) => {
-    const volScalOptionList = props.volScales
-    .map(option =>{
-    return <option key={option}>{option}</option>
-    })
+ const volScalesOptionLists = props.volScales.map(option =>{
+ return <option key={option}>{option}</option>
+ })
+        
   return (
     <div>
       <h3>Volume unit Conversion</h3>
       <form>
         <label>Initial Volume: </label>
-        <input className="input" type="number" placeholder="Enter The initial Volume" onChange={props.inputChaged}/>
-        <select>
+        <input className="volinput" type="number" placeholder="Enter The Initial Volume" onChange={props.inputChaged}
+        />
+        <select onChange={props.changedFrom}>
             <option>...From...</option>
-            {volScalOptionList}
+            {volScalesOptionLists}
         </select>
 
-        <select>
+        <select onChange= {props.ChangedTo}>
             <option>...TO...</option>
-            {volScalOptionList}
+            {volScalesOptionLists}
         </select>
       </form>
-      <button onClick={props.converted}>Clicke to convert</button>
+      <button onClick={props.converted}>click Here to Convert </button>
+      <div>
+        <input type="number" placeholder="Student Answer" onChange = {props.answerHandled} />
+      </div>
     </div>
   );
 };

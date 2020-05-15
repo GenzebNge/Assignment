@@ -7,24 +7,23 @@
     outline: none;
 }
 .Button {
-    background-color: Green;
+    background-color: rgb(9, 0, 128);
     border: none;
     color: white;
     padding: 15px 18px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
+    font-size: 15px;
   }
   .Btnc {
-    background-color: rgb(21, 34, 21);
-    border: none;
+    background-color: burlywood;
+    border: 1px solid rebeccapurple;
     color: white;
-    padding: 15px 18px;
+    padding: 10px 9px 6px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 10px;
+    font-size: 15px;
   }
   .select{
     position: relative;

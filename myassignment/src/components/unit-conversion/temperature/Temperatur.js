@@ -16,7 +16,6 @@ const Temperature = (props) => {
           onChange={props.inputHandle}
         />
 
-        {/* //pupulating the unit to the input filed */}
         <select className ="select"onChange={props.changedFrom}>
           <option>...From...</option>
           {scaleOptionList}
@@ -26,7 +25,8 @@ const Temperature = (props) => {
           {scaleOptionList}
         </select>
       </form>
-      <button className="Button" onClick={props.converted}>Convert </button>
+      <button className="Button" onClick={props.converted}> Convert </button>
+     
       <div className="row">
       <input type="number" placeholder="Enter Student Answer" onChange={props.answerHandled}/>
       <select className="select" onChange={props.ChangedTo}>
